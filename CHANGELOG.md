@@ -6,28 +6,51 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.5] - 2026-04-19
+
+### Added
+
+- Standalone GitHub repository at `stackra-co/ts-redis`
+- CI workflow (typecheck, build, lint, format, test) — all green
+- Publish workflow with npm provenance and GitHub Releases
+- `pnpm-lock.yaml` for reproducible CI installs
+- Test mocks for `@stackra/ts-support` and `@stackra/ts-container` peer deps
+- `RedisFacade` typed proxy for DI container access
+
+### Fixed
+
+- Removed phantom `connection.base` export (file did not exist)
+- Fixed test import path (`redis.service` → `redis-manager.service`)
+- Fixed wrong `@module` tag in `use-redis-connection/index.ts`
+- Pinned eslint to v9 for `@nesvel/eslint-config` compatibility
+- Added `eslint-plugin-turbo` and `jiti` to devDependencies
+- Changed `@stackra/ts-support` peer dep from `workspace:*` to `^2.0.0`
+- Fixed duplicate banner section in README
+
+### Changed
+
+- Added explicit `public` access modifiers to all public methods
+- Replaced `@packageDocumentation` with `@module` tags across all files
+- Replaced `export *` with named exports in all barrel `index.ts` files
+- Added `@fileoverview`, `@module`, and section headers to all barrels
+- Enhanced `IRedisService` interface with `@param`, `@returns` on all methods
+- Enhanced `tokens.constant.ts` with `@example` injection patterns
+- Excluded `.examples/`, `__tests__/`, and `config/` from eslint
+- Updated repository URL from `react-redis` to `ts-redis`
+
 ## [1.1.4] - 2026-04-18
 
 ### Fixed
 
-- Removed phantom `connection.base` export from `src/connections/index.ts` (file
-  did not exist)
-- Fixed test import path from non-existent `@/services/redis.service` to
+- Removed phantom `connection.base` export from `src/connections/index.ts`
+- Fixed test import path from `@/services/redis.service` to
   `@/services/redis-manager.service`
-- Fixed wrong `@module` tag in `use-redis-connection/index.ts`
-  (`hooks/use-redis` → `hooks/use-redis-connection`)
 
 ### Changed
 
-- Added explicit `public` access modifiers to all public methods in
-  `UpstashConnection`, `UpstashConnector`, `RedisManager`, and `RedisModule`
-- Replaced `@packageDocumentation` with `@module` tags across all source files
-- Replaced `export *` with named exports in all barrel `index.ts` files
-- Added `@fileoverview`, `@module`, and section headers to all barrel exports
-- Enhanced `IRedisService` interface with `@param`, `@returns` on all methods
-- Enhanced `tokens.constant.ts` with `@example` injection patterns on all tokens
-- Added `@returns` tags to all `RedisManager` public methods
-- Updated repository URL from `react-redis` to `ts-redis`
+- Applied @stackra coding standards across all source files
+- Added explicit `public` access modifiers
+- Replaced `@packageDocumentation` with `@module` tags
 
 ## [1.0.4] - 2026-04-05
 
@@ -53,48 +76,10 @@ and this project adheres to
 - Support for multiple named connections
 - React hooks: `useRedis()` and `useRedisConnection()`
 - Comprehensive TypeScript types and JSDoc documentation
-- Connection interfaces: `RedisConnection`, `RedisConnector`
-- Configuration interfaces: `RedisConfig`, `RedisConnectionConfig`
 - `UpstashConnection` implementation for Upstash Redis HTTP client
 - `UpstashConnector` for creating Upstash connections
-- Pipeline support for batching operations
+- Pipeline, pub/sub, sorted sets, Lua scripting
 - Retry configuration with exponential backoff
-- Timeout configuration for requests
-- Auto-pipelining support
-- Complete Redis operations:
-  - Basic key-value operations (get, set, del, exists, expire, ttl)
-  - Multi-key operations (mget, mset)
-  - Increment/decrement operations (incr, incrby, decr, decrby)
-  - Sorted set operations (zadd, zrange, zrem, zremrangebyscore)
-  - Lua script execution (eval)
-  - Pipeline operations for batching
-  - Maintenance operations (flushdb, disconnect)
-
-### Documentation
-
-- Comprehensive README with quick start guide
-- API reference documentation
-- Common patterns and best practices
-- Browser compatibility information
-- TypeScript usage examples
-- React hooks examples
-- Multiple connection configuration examples
-- EXAMPLES.md with detailed usage scenarios
-
-### Features
-
-- ✅ Browser-compatible (no Node.js required)
-- ✅ Multiple named connections
-- ✅ Dependency injection support
-- ✅ React hooks
-- ✅ Full TypeScript support
-- ✅ Production-ready error handling
-- ✅ Automatic retries with backoff
-- ✅ Request timeouts
-- ✅ Pipeline support for performance
-- ✅ Lazy connection initialization
-- ✅ Connection caching and reuse
-- ✅ Graceful cleanup
 
 ## [Unreleased]
 
@@ -104,7 +89,3 @@ and this project adheres to
 - Metrics and monitoring hooks
 - Advanced caching patterns
 - Cache invalidation strategies
-- Distributed lock improvements
-- Rate limiting utilities
-- Session management utilities
-- Integration with @stackra/cache package
