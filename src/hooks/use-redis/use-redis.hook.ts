@@ -6,6 +6,7 @@
  * @module hooks/use-redis
  */
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useInject } from '@stackra/ts-container';
 import { RedisManager } from '@/services/redis-manager.service';
 

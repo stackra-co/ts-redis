@@ -7,6 +7,8 @@
  * @module redis.module
  */
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { Module, type DynamicModule } from '@stackra/ts-container';
 
 import { REDIS_CONFIG, REDIS_MANAGER, REDIS_CONNECTOR } from '@/constants/tokens.constant';

@@ -15,6 +15,8 @@
  * @module services/redis-manager
  */
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { Injectable, Inject, type OnModuleInit, type OnModuleDestroy } from '@stackra/ts-container';
 import { MultipleInstanceManager } from '@stackra/ts-support';
 
@@ -67,8 +69,6 @@ export class RedisManager
    * @returns A promise that resolves when the default connection is warmed
    */
   public async onModuleInit(): Promise<void> {
-    // Only warm the default connection if it's configured.
-    // Skip silently if no connections are defined (e.g. no Upstash credentials).
     const defaultName = this.config.default;
     if (this.config.connections[defaultName]) {
       try {

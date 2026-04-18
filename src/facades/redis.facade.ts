@@ -52,6 +52,7 @@
  * @see {@link Facade} — the base class providing `make()`
  */
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Facade } from '@stackra/ts-support';
 import { RedisManager } from '@/services/redis-manager.service';
 
