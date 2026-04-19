@@ -1,21 +1,21 @@
 {
-  "name": "@stackra/ts-redis",
+  "name": "@stackra-inc/ts-redis",
   "version": "1.1.5",
   "description": "Client-side Redis connection management using Upstash HTTP API for React",
   "license": "MIT",
   "author": {
     "name": "Stackra L.L.C",
     "email": "dev@stackra.com",
-    "url": "https://github.com/stackra-co"
+    "url": "https://github.com/stackra-inc"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stackra-co/ts-redis.git"
+    "url": "https://github.com/stackra-inc/ts-redis.git"
   },
   "bugs": {
-    "url": "https://github.com/stackra-co/ts-redis/issues"
+    "url": "https://github.com/stackra-inc/ts-redis/issues"
   },
-  "homepage": "https://github.com/stackra-co/ts-redis#readme",
+  "homepage": "https://github.com/stackra-inc/ts-redis#readme",
   "keywords": [
     "react",
     "redis",
@@ -62,15 +62,15 @@
     "@upstash/redis": "^1.37.0"
   },
   "peerDependencies": {
-    "@stackra/ts-container": "^2.0.4",
-    "@stackra/ts-support": "^2.0.0",
+    "@stackra-inc/ts-container": "^2.0.4",
+    "@stackra-inc/ts-support": "^2.0.0",
     "react": "^18.0.0 || ^19.0.0"
   },
   "peerDependenciesMeta": {
-    "@stackra/ts-container": {
+    "@stackra-inc/ts-container": {
       "optional": false
     },
-    "@stackra/ts-support": {
+    "@stackra-inc/ts-support": {
       "optional": false
     },
     "react": {

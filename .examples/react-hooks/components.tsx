@@ -6,8 +6,8 @@
  */
 
 import React, { useEffect, useState, useCallback } from 'react';
-import { useRedis, useRedisConnection } from '@stackra/ts-redis';
-import type { RedisConnection } from '@stackra/ts-redis';
+import { useRedis, useRedisConnection } from '@stackra-inc/ts-redis';
+import type { RedisConnection } from '@stackra-inc/ts-redis';
 
 // ============================================================================
 // 1. useRedis — Access the RedisManager directly

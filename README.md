@@ -1,10 +1,10 @@
 <p align="center">
-  <img src=".github/assets/banner.svg" alt="@stackra/ts-redis" width="100%" />
+  <img src=".github/assets/banner.svg" alt="@stackra-inc/ts-redis" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@stackra/ts-redis">
-    <img src="https://img.shields.io/npm/v/@stackra/ts-redis?style=flat-square&color=38bdf8&label=npm" alt="npm version" />
+  <a href="https://www.npmjs.com/package/@stackra-inc/ts-redis">
+    <img src="https://img.shields.io/npm/v/@stackra-inc/ts-redis?style=flat-square&color=38bdf8&label=npm" alt="npm version" />
   </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-818cf8?style=flat-square" alt="MIT license" />
@@ -16,7 +16,7 @@
 
 ---
 
-# @stackra/ts-redis
+# @stackra-inc/ts-redis
 
 Client-side Redis connection management using Upstash HTTP API for Refine
 applications.
@@ -26,7 +26,7 @@ applications.
 - ✅ **Browser-Compatible**: Uses Upstash HTTP REST API (no Node.js required)
 - ✅ **Multiple Connections**: Support for named connections (cache, session,
   etc.)
-- ✅ **Dependency Injection**: Integrates with @stackra/container
+- ✅ **Dependency Injection**: Integrates with @stackra-inc/container
 - ✅ **React Hooks**: Easy-to-use hooks for React components
 - ✅ **TypeScript**: Full type safety with comprehensive JSDoc
 - ✅ **Production-Ready**: Error handling, retries, and timeouts
@@ -35,11 +35,11 @@ applications.
 ## Installation
 
 ```bash
-npm install @stackra/ts-redis @upstash/redis
+npm install @stackra-inc/ts-redis @upstash/redis
 # or
-yarn add @stackra/ts-redis @upstash/redis
+yarn add @stackra-inc/ts-redis @upstash/redis
 # or
-pnpm add @stackra/ts-redis @upstash/redis
+pnpm add @stackra-inc/ts-redis @upstash/redis
 ```
 
 ## Quick Start
@@ -54,8 +54,8 @@ pnpm add @stackra/ts-redis @upstash/redis
 
 ```typescript
 // app.module.ts
-import { Module } from '@stackra/container';
-import { RedisModule } from '@stackra/ts-redis';
+import { Module } from '@stackra-inc/container';
+import { RedisModule } from '@stackra-inc/ts-redis';
 
 @Module({
   imports: [
@@ -78,8 +78,8 @@ export class AppModule {}
 #### In Services (with DI)
 
 ```typescript
-import { Injectable } from '@stackra/container';
-import { RedisService } from '@stackra/ts-redis';
+import { Injectable } from '@stackra-inc/container';
+import { RedisService } from '@stackra-inc/ts-redis';
 
 @Injectable()
 export class UserService {
@@ -105,7 +105,7 @@ export class UserService {
 #### In React Components (with Hooks)
 
 ```typescript
-import { useRedis } from '@stackra/ts-redis';
+import { useRedis } from '@stackra-inc/ts-redis';
 import { useEffect, useState } from 'react';
 
 function UserProfile({ userId }: { userId: string }) {
@@ -486,7 +486,7 @@ import type {
   RedisConnectionConfig,
   SetOptions,
   RedisPipeline,
-} from '@stackra/ts-redis';
+} from '@stackra-inc/ts-redis';
 ```
 
 ## Browser Compatibility
@@ -517,6 +517,6 @@ submitting PRs.
 
 ## Related Packages
 
-- [@stackra/cache](../cache) - Multi-driver cache system
+- [@stackra-inc/cache](../cache) - Multi-driver cache system
 - [@upstash/redis](https://github.com/upstash/upstash-redis) - Upstash Redis
   client

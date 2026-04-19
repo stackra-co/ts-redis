@@ -5,8 +5,8 @@
  * connection introspection, and service injection patterns.
  */
 
-import { Module, Injectable, Inject } from '@stackra/ts-container';
-import { RedisModule, RedisManager } from '@stackra/ts-redis';
+import { Module, Injectable, Inject } from '@stackra-inc/ts-container';
+import { RedisModule, RedisManager } from '@stackra-inc/ts-redis';
 import redisConfig from './redis.config';
 
 // ============================================================================

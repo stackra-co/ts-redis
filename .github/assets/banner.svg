@@ -37,7 +37,7 @@
     <line x1="104" y1="20" x2="104" y2="90" stroke="#818cf8" stroke-width="2" opacity="0.6"/>
     <text x="60" y="62" font-family="ui-monospace,monospace" font-size="18" font-weight="700" fill="#f87171" text-anchor="middle" opacity="0.9">R</text>
   </g>
-  <text x="240" y="178" font-family="ui-monospace,'Cascadia Code','Fira Code',Menlo,monospace" font-size="42" font-weight="700" fill="#f1f5f9" letter-spacing="-0.5">@stackra/ts-redis</text>
+  <text x="240" y="178" font-family="ui-monospace,'Cascadia Code','Fira Code',Menlo,monospace" font-size="42" font-weight="700" fill="#f1f5f9" letter-spacing="-0.5">@stackra-inc/ts-redis</text>
   <text x="240" y="218" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="18" fill="#94a3b8">Client-side Redis via Upstash HTTP API — connection management + DI</text>
   <g transform="translate(240, 245)">
     <rect x="0" y="0" width="96" height="32" rx="6" fill="#f87171" opacity="0.12"/>

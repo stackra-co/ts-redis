@@ -1,10 +1,10 @@
 /**
- * @fileoverview Vitest configuration for @stackra/ts-redis package
+ * @fileoverview Vitest configuration for @stackra-inc/ts-redis package
  *
  * This configuration sets up the testing environment for the package,
  * including test globals, jsdom environment, coverage reporting, and path aliases.
  *
- * @module @stackra/ts-redis
+ * @module @stackra-inc/ts-redis
  * @category Configuration
  */
 
@@ -28,8 +28,8 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
       // Stub peer dependencies for testing — the real mocks are in vitest.setup.ts
-      '@stackra/ts-support': path.resolve(__dirname, './__tests__/__mocks__/ts-support.ts'),
-      '@stackra/ts-container': path.resolve(__dirname, './__tests__/__mocks__/ts-container.ts'),
+      '@stackra-inc/ts-support': path.resolve(__dirname, './__tests__/__mocks__/ts-support.ts'),
+      '@stackra-inc/ts-container': path.resolve(__dirname, './__tests__/__mocks__/ts-container.ts'),
     },
   },
 });

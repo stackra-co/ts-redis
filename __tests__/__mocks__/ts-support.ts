@@ -1,5 +1,5 @@
 /**
- * Mock for @stackra/ts-support
+ * Mock for @stackra-inc/ts-support
  *
  * Provides a stub MultipleInstanceManager base class and Facade
  * so RedisManager can extend it without the real package installed.
