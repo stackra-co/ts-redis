@@ -9,7 +9,7 @@
  */
 
 import { Redis } from '@upstash/redis';
-import { Injectable } from '@stackra-inc/ts-container';
+import { Injectable } from '@stackra/ts-container';
 
 import type { RedisConnector, RedisConnection, RedisConnectionConfig } from '@/interfaces';
 import { UpstashConnection } from '@/connections/upstash.connection';
@@ -23,7 +23,7 @@ import { UpstashConnection } from '@/connections/upstash.connection';
  * configuration.
  *
  * The connector is injectable and can be used with dependency injection
- * frameworks like @stackra-inc/ts-container.
+ * frameworks like @stackra/ts-container.
  *
  * @example
  * ```typescript

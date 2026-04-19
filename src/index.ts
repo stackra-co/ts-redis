@@ -1,10 +1,10 @@
 /**
- * @stackra-inc/ts-redis
+ * @stackra/ts-redis
  *
  * Client-side Redis connection management using Upstash HTTP API.
  * Provides multiple named connections, DI integration, and React hooks.
  *
- * @module @stackra-inc/ts-redis
+ * @module @stackra/ts-redis
  */
 
 // ============================================================================

@@ -12,13 +12,13 @@
  *
  * @example
  * ```typescript
- * import redisConfig from '@stackra-inc/ts-redis/config';
+ * import redisConfig from '@stackra/ts-redis/config';
  *
  * RedisModule.forRoot(redisConfig);
  * ```
  */
 
-import { defineConfig } from '@stackra-inc/ts-redis';
+import { defineConfig } from '@stackra/ts-redis';
 
 /**
  * Redis configuration

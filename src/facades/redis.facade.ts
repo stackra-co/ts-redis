@@ -1,7 +1,7 @@
 /**
  * Redis Facade
  *
- * Typed proxy for {@link RedisManager} from `@stackra-inc/ts-redis`.
+ * Typed proxy for {@link RedisManager} from `@stackra/ts-redis`.
  *
  * Redis connection manager. Manages named Upstash Redis connections.
  *
@@ -12,8 +12,8 @@
  * ## Setup (once, in main.tsx)
  *
  * ```typescript
- * import { Application } from '@stackra-inc/ts-container';
- * import { Facade } from '@stackra-inc/ts-support';
+ * import { Application } from '@stackra/ts-container';
+ * import { Facade } from '@stackra/ts-support';
  *
  * const app = await Application.create(AppModule);
  * Facade.setApplication(app); // wires all facades
@@ -22,7 +22,7 @@
  * ## Usage
  *
  * ```typescript
- * import { RedisFacade } from '@stackra-inc/ts-redis';
+ * import { RedisFacade } from '@stackra/ts-redis';
  *
  * // Full autocomplete — no .proxy() call needed
  * RedisFacade.connection();
@@ -37,7 +37,7 @@
  * ## Testing — swap in a mock
  *
  * ```typescript
- * import { Facade } from '@stackra-inc/ts-support';
+ * import { Facade } from '@stackra/ts-support';
  * import { RedisManager } from '@/services/redis-manager.service';
  *
  * // Before test — replace the resolved instance
@@ -53,7 +53,7 @@
  */
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Facade } from '@stackra-inc/ts-support';
+import { Facade } from '@stackra/ts-support';
 import { RedisManager } from '@/services/redis-manager.service';
 
 /**

@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to @stackra-inc/ts-redis will be documented in this file.
+All notable changes to @stackra/ts-redis will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
@@ -14,7 +14,7 @@ and this project adheres to
 - CI workflow (typecheck, build, lint, format, test) — all green
 - Publish workflow with npm provenance and GitHub Releases
 - `pnpm-lock.yaml` for reproducible CI installs
-- Test mocks for `@stackra-inc/ts-support` and `@stackra-inc/ts-container` peer deps
+- Test mocks for `@stackra/ts-support` and `@stackra/ts-container` peer deps
 - `RedisFacade` typed proxy for DI container access
 
 ### Fixed
@@ -24,7 +24,7 @@ and this project adheres to
 - Fixed wrong `@module` tag in `use-redis-connection/index.ts`
 - Pinned eslint to v9 for `@nesvel/eslint-config` compatibility
 - Added `eslint-plugin-turbo` and `jiti` to devDependencies
-- Changed `@stackra-inc/ts-support` peer dep from `workspace:*` to `^2.0.0`
+- Changed `@stackra/ts-support` peer dep from `workspace:*` to `^2.0.0`
 - Fixed duplicate banner section in README
 
 ### Changed
@@ -48,7 +48,7 @@ and this project adheres to
 
 ### Changed
 
-- Applied @stackra-inc coding standards across all source files
+- Applied @stackra coding standards across all source files
 - Added explicit `public` access modifiers
 - Replaced `@packageDocumentation` with `@module` tags
 
@@ -57,7 +57,7 @@ and this project adheres to
 ### Fixed
 
 - Replaced `forRoot` helper with inline `DynamicModule` object in
-  `RedisModule.forRoot()` for compatibility with `@stackra-inc/ts-container` v2
+  `RedisModule.forRoot()` for compatibility with `@stackra/ts-container` v2
 - Providers now correctly respect `isGlobal` flag per-provider
 
 ### Added
@@ -69,7 +69,7 @@ and this project adheres to
 
 ### Added
 
-- Initial release of @stackra-inc/ts-redis
+- Initial release of @stackra/ts-redis
 - Browser-compatible Redis operations using Upstash HTTP API
 - `RedisService` for connection management
 - `RedisModule` for dependency injection configuration

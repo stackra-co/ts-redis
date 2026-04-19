@@ -17,8 +17,8 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { Injectable, Inject, type OnModuleInit, type OnModuleDestroy } from '@stackra-inc/ts-container';
-import { MultipleInstanceManager } from '@stackra-inc/ts-support';
+import { Injectable, Inject, type OnModuleInit, type OnModuleDestroy } from '@stackra/ts-container';
+import { MultipleInstanceManager } from '@stackra/ts-support';
 
 import type { RedisConnection, RedisConnector, RedisConfig, IRedisService } from '@/interfaces';
 import { REDIS_CONFIG, REDIS_CONNECTOR } from '@/constants/tokens.constant';

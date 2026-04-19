@@ -1,5 +1,5 @@
 /**
- * Mock for @stackra-inc/ts-container
+ * Mock for @stackra/ts-container
  *
  * Provides no-op decorator implementations so classes can be
  * instantiated without the DI container.

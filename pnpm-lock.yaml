@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
-      '@stackra-inc/ts-container':
+      '@stackra/ts-container':
         specifier: ^2.0.4
         version: 2.0.7(react@19.2.5)
-      '@stackra-inc/ts-support':
+      '@stackra/ts-support':
         specifier: ^2.0.0
-        version: 2.5.4(@stackra-inc/ts-container@2.0.7(react@19.2.5))
+        version: 2.5.4(@stackra/ts-container@2.0.7(react@19.2.5))
       '@upstash/redis':
         specifier: ^1.37.0
         version: 1.37.0
@@ -772,7 +772,7 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@stackra-inc/ts-container@2.0.7':
+  '@stackra/ts-container@2.0.7':
     resolution: {integrity: sha512-gBKvZQhlGBfuq9/03v8ojV3lfAzBjyJSfo2pW9P9w8FIfq/fr/PVWlwXrg3iI4XbLf4oSuww0X4nAgbylOWNqw==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -781,13 +781,13 @@ packages:
       react:
         optional: true
 
-  '@stackra-inc/ts-support@2.5.4':
+  '@stackra/ts-support@2.5.4':
     resolution: {integrity: sha512-eLhqfLjlj77EjTzHi9aZRWbTXeo2EKY97omnwAeMDCJgYk+4Z1Bn+6OironRwmYqe41qBkrSP8I9TrKxaPLgPg==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@stackra-inc/ts-container': ^2.0.4
+      '@stackra/ts-container': ^2.0.4
     peerDependenciesMeta:
-      '@stackra-inc/ts-container':
+      '@stackra/ts-container':
         optional: true
 
   '@standard-schema/spec@1.1.0':
@@ -2319,18 +2319,18 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.60.2':
     optional: true
 
-  '@stackra-inc/ts-container@2.0.7(react@19.2.5)':
+  '@stackra/ts-container@2.0.7(react@19.2.5)':
     dependencies:
       '@vivtel/metadata': 1.0.5(reflect-metadata@0.2.2)
       reflect-metadata: 0.2.2
     optionalDependencies:
       react: 19.2.5
 
-  '@stackra-inc/ts-support@2.5.4(@stackra-inc/ts-container@2.0.7(react@19.2.5))':
+  '@stackra/ts-support@2.5.4(@stackra/ts-container@2.0.7(react@19.2.5))':
     dependencies:
       collect.js: 4.36.1
     optionalDependencies:
-      '@stackra-inc/ts-container': 2.0.7(react@19.2.5)
+      '@stackra/ts-container': 2.0.7(react@19.2.5)
 
   '@standard-schema/spec@1.1.0': {}
 

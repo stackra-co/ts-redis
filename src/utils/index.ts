@@ -1,7 +1,7 @@
 /**
  * Utils
  *
- * @module @stackra-inc/ts-redis
+ * @module @stackra/ts-redis
  */
 
 export { defineConfig } from './define-config.util';
