@@ -41,7 +41,7 @@ and this project adheres to
 - Removed phantom `connection.base` export (file did not exist)
 - Fixed test import path (`redis.service` → `redis-manager.service`)
 - Fixed wrong `@module` tag in `use-redis-connection/index.ts`
-- Pinned eslint to v9 for `@nesvel/eslint-config` compatibility
+- Pinned eslint to v9 for `@stackra/eslint-config` compatibility
 - Added `eslint-plugin-turbo` and `jiti` to devDependencies
 - Changed `@stackra/ts-support` peer dep from `workspace:*` to `^2.0.0`
 - Fixed duplicate banner section in README
